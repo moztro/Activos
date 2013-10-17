@@ -79,14 +79,15 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Enums\NivelArea.cs" />
     <Compile Include="Enums\Rubro.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Activo.cs" />
     <Compile Include="Modelo\Almacen.cs" />
+    <Compile Include="Modelo\Area.cs" />
     <Compile Include="Modelo\BaseBO.cs" />
-    <Compile Include="Modelo\Direccion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
