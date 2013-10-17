@@ -1,52 +1,59 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Activos.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="MiniSAP.Site" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head runat="server">
+<head id="Head1" runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
-    </asp:ContentPlaceHolder>
+    <title>Fiscalia General del Estado. Sistema de Entradas y Salidas de Activos</title>
+    <link href="sitersc/css/plantilla.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="sitersc/js/libs/jQuery1.8.2/jQuery1.8.2-min.js"></script>
+    <script type="text/javascript" src="sitersc/js/plantilla.js"></script>
+    
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">    
+    </asp:ContentPlaceHolder>     
 </head>
 <body>
-    <form runat="server">
-    <div class="page">
-        <div class="header">
-            <div class="title">
-                <h1>
-                    Mi aplicación ASP.NET
-                </h1>
+
+<form id="Form1" runat="server">
+<asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+</asp:ToolkitScriptManager>
+    
+<div id="cabecera-superior">
+    <div id="cabecera-superior-content">
+        <span class="app_nombre">Sistema de Entradas y Salidas de Activos</span>
+        <span id="fecha" class="app_nombre"></span>                     		
+    </div>
+</div> 
+    
+<div id="cabecera-titulo">
+	<div id="cabecera-titulo-content">
+    	<img src="sitersc/img/banner-fiscalia.jpg" alt="" />        
+        <div id="menu">
+        	<asp:ContentPlaceHolder ID="cphMenu" runat="server">
+            <!-- ACA VA EL MENU -->
+            </asp:ContentPlaceHolder>
+        </div>           
+    </div>    
+</div>
+
+    <div id="wrapper">
+        <div id="pageBody-content">      
+            <div id="contenido">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>          
             </div>
-            <div class="loginDisplay">
-                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
-                    <AnonymousTemplate>
-                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Iniciar sesión</a> ]
-                    </AnonymousTemplate>
-                    <LoggedInTemplate>
-                        Pantalla de bienvenida <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
-                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/"/> ]
-                    </LoggedInTemplate>
-                </asp:LoginView>
-            </div>
-            <div class="clear hideSkiplink">
-                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
-                    <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Página principal"/>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Acerca de"/>
-                    </Items>
-                </asp:Menu>
-            </div>
-        </div>
-        <div class="main">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
-        </div>
-        <div class="clear">
         </div>
     </div>
-    <div class="footer">
-        
+    
+    <div id="footer-deeper">
+	    <span>Departamento de Desarrollo de Sistemas. Ext.41135</span>
+	    <span  style="float:right">Fiscalia General del Estado de Yucatán <span id="anio"><!-- año --></span></span>                
     </div>
-    </form>
+</form>
+<div id="pageActivity">
+    <img src="sitersc/img/indicator_red.gif" />Cargando....
+</div>
 </body>
 </html>

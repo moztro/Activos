@@ -1,0 +1,59 @@
+#menuBotones
+{	
+	height:110px;
+	margin-left:auto;
+	margin-right:auto;
+	width:520px;
+	padding-top:10px;	
+}
+
+#menuBotones ul
+{	
+	list-style-type:none;
+	float:left;
+	padding:0;
+	margin:0;
+	position:relative;
+		
+}
+
+#menuBotones ul li
+{
+	float:left;
+	margin-right:18px;
+	padding:1px;	
+}
+
+#menuBotones ul li img
+{
+	border:0;
+}
+
+#panelFiltro
+{
+	background-color:#f4f4f4;
+	border-top:1px solid #D8D8D8;
+	height:80px;
+	margin-bottom:20px;
+}
+
+#tabContenedor
+{
+	margin-bottom:20px;
+}
+
+#bandejaCasos
+{
+	overflow:scroll;
+	height:300px;
+}
+
+#buscadorExistente
+{	
+	height:80px;
+	width:480px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:35px;
+}
+

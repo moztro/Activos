@@ -1,0 +1,35 @@
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.divSubirImg
+{
+	border:10px solid #666;
+	background-color:#F0F0FB;
+	padding:25px;
+}
+
+.div_botones_popup
+{
+	text-align:right;		
+}
+
+#div_contenedorImgLoader
+{
+	margin-bottom:10px;	
+}
+
+.fotoDenunciante
+{
+	border: 1px solid #999;
+	padding:2px;	
+}
+
+.span-confirmacionSubida
+{
+	font-size:12px;
+	font-style:italic;
+	color:#F00;
+}

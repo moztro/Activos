@@ -9,6 +9,7 @@ namespace Activos.Modelo
     public class Almacen : BaseBO
     {
         private Rubro rubro;
+        private List<Activo> activos = new List<Activo>();
 
         public Almacen() { }
 
@@ -20,10 +21,27 @@ namespace Activos.Modelo
             this.Rubro = _rubro;
         }
 
+        public Almacen(Rubro _rubro)
+        {
+            this.Rubro = _rubro;
+        }
+
+        public Almacen(Rubro _rubro, List<Activo> _activos)
+        {
+            this.Rubro = _rubro;
+            this.Activos = _activos;
+        }
+
         public Rubro Rubro
         {
             get { return rubro; }
             set { this.rubro = value; }
+        }
+
+        public List<Activo> Activos
+        {
+            get { return activos; }
+            set { this.activos = value; }
         }
     }
 }

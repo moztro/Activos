@@ -18,6 +18,7 @@ namespace Activos.Modelo
         public Area(Area _subArea)
         {
             this.SubArea = _subArea;
+
         }
 
         public Area(Area _subArea, NivelArea _nivelArea)
