@@ -8,8 +8,8 @@ namespace Activos.Modelo
 {
     public class Area : BaseBO
     {
-        private Area subArea;
-        private NivelArea nivelArea;
+        public Area SubArea { get; set; }
+        public NivelArea NivelArea { get; set; }
 
         public Area() { }
 
@@ -32,18 +32,6 @@ namespace Activos.Modelo
         {
             this.SubArea = _subArea;
             this.NivelArea = _nivelArea;
-        }
-
-        public Area SubArea
-        {
-            get { return subArea; }
-            set { this.subArea = value; }
-        }
-
-        public NivelArea NivelArea
-        {
-            get { return nivelArea; }
-            set { this.nivelArea = value; }
         }
     }
 }

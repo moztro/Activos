@@ -7,19 +7,7 @@ namespace Activos.Modelo
 {
     public class ActivoAsignado : Activo
     {
-        private int cantidadAsignada;
-        private Area area;
-
-        public int CantidadAsignada
-        {
-            get { return cantidadAsignada; }
-            set { this.cantidadAsignada = value; }
-        }
-
-        public Area Area
-        {
-            get { return area; }
-            set { this.area = value; }
-        }
+        public int CantidadAsignada { get; set; }
+        public Area Area { get; set; }
     }
 }

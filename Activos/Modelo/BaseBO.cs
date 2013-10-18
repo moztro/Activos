@@ -7,8 +7,8 @@ namespace Activos.Modelo
 {
     public class BaseBO
     {
-        private int id;
-        private String descripcion;
+        public int Id { get; set; }
+        public String Descripcion { get; set; }
 
         public BaseBO() { }
 
@@ -18,16 +18,5 @@ namespace Activos.Modelo
             this.Descripcion = _descripcion;
         }
 
-        public int Id
-        {
-            get { return id; }
-            set { this.id = value; }
-        }
-
-        public String Descripcion
-        {
-            get { return descripcion; }
-            set { this.descripcion = value; }
-        }
     }
 }
