@@ -1,16 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" >
-  <subclass name="Activos.Modelo.Almacen,Activos" extends="BaseBO">
-    <id name="Id" column="Id" unsaved-value="0">
-      <generator class="native"/>
-    </id>
-    <one-to-many name="rubro" column="rubroId"/>
+  <joined-subclass name="Activos.Modelo.Almacen,Activos" extends="BaseBO">
+    <key column="Id" />
+    <many-to-one name="rubro" column="rubroId"/>
     <list name="activos" cascade="all-delete-orphan">
       <key column="almacenId"/>
       <index column="activoId"/>
       <one-to-many class="activos"/>
     </list>
-  </subclass>
+  </joined-subclass>
 </hibernate-mapping>
 
 

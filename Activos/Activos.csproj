@@ -67,13 +67,10 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Mapeos\Almacen.hbm.xml">
+    <EmbeddedResource Include="Mappings\Almacen.hbm.xml">
       <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Mapeos\Area.hbm.xml" />
-    <Content Include="NHibernate\Iesi.Collections.dll" />
-    <Content Include="NHibernate\log4net.dll" />
-    <Content Include="NHibernate\NHibernate.dll" />
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\Area.hbm.xml" />
     <EmbeddedResource Include="Mappings\Activo.hbm.xml" />
     <Content Include="Mappings\ActivoAsignado.hbm.xml" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />

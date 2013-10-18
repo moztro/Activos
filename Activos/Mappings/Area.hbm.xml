@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" >
-  <subclass name="Activos.Modelo.Area,Activos" extends="BaseBO">
-    <id name="Id" column="Id" unsaved-value="0">
-      <generator class="native"/>
-    </id>
+  <joined-subclass name="Activos.Modelo.Area,Activos" extends="BaseBO">
+    <key column="Id" />
     <one-to-many name="subArea" column="subAreaId" lazy="false"/>
     <one-to-many name="nivelArea" column="nivelAreaId" lazy="false"/>
-  </subclass>
+  </joined-subclass>
 </hibernate-mapping>
