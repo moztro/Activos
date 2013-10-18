@@ -26,6 +26,7 @@ namespace Activos.Utils
         private static void Init()
         {
             nhConfiguration = new Configuration();
+            //nhConfiguration.Configure("NhibernateUtils/NHibernate.cfg.xml");
             nhConfiguration.AddAssembly("Activos");
             sessionFactory = nhConfiguration.BuildSessionFactory();
         }

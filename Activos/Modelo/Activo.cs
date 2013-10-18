@@ -7,9 +7,9 @@ namespace Activos.Modelo
 {
     public class Activo : BaseBO
     {
-        public int Existencia { get; set; }
-        public double Precio { get; set; }
-        public Almacen Almacen { get; set; }
+        public virtual int Existencia { get; set; }
+        public virtual double Precio { get; set; }
+        public virtual Almacen Almacen { get; set; }
 
         public Activo() { }
 

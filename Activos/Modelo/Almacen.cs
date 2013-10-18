@@ -8,8 +8,8 @@ namespace Activos.Modelo
 {
     public class Almacen : BaseBO
     {
-        public Rubro Rubro { get; set; }
-        public List<Activo> Activos { get; set; }
+        public virtual Rubro Rubro { get; set; }
+        public virtual List<Activo> Activos { get; set; }
 
         public Almacen() { }
 

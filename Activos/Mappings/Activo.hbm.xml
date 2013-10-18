@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
-                   assembly="Activos"
-                   namespace="Activos.Modelo.Activo">
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
 
-  <joined-subclass name="Activo" extends="BaseBO" table="Activo">
-    <key column="Id" />
+  <joined-subclass name="Activos.Modelo.Activo,Activos" extends="Activos.Modelo.BaseBO" table="Activo">
+    <key column="ActivoId" />
     <property name="Existencia" type="int"/>
     <property name="Precio" type="double"/>
     <many-to-one name="Almacen" column="AlmacenId" lazy="false" />    

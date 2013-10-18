@@ -10,6 +10,7 @@
     <h2>
         Bienvenido al Sistema de E/S Activos
     </h2>
+    <asp:TextBox id="txtActivo" runat="server" />
     <p>
         Éste sistema permitirá controlar todas las E/S del almacén de recursos materiales de la FGE.
     </p>

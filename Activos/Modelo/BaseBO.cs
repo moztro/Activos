@@ -7,8 +7,8 @@ namespace Activos.Modelo
 {
     public class BaseBO
     {
-        public int Id { get; set; }
-        public String Descripcion { get; set; }
+        public virtual int Id { get; set; }
+        public virtual String Descripcion { get; set; }
 
         public BaseBO() { }
 

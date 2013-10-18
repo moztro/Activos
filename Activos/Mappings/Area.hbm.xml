@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" >
-  <joined-subclass name="Activos.Modelo.Area,Activos" extends="BaseBO">
-    <key column="Id" />
-    <one-to-many name="subArea" column="subAreaId" lazy="false"/>
-    <one-to-many name="nivelArea" column="nivelAreaId" lazy="false"/>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <joined-subclass name="Activos.Modelo.Area,Activos" extends="Activos.Modelo.BaseBO">
+    <key column="AreaId" />
+    <many-to-one name="SuperArea" column="SuperAreaId" lazy="false"/>
+    <property name="NivelArea" type="int"/>
   </joined-subclass>
 </hibernate-mapping>

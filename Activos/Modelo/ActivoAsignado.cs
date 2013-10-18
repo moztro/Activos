@@ -7,7 +7,7 @@ namespace Activos.Modelo
 {
     public class ActivoAsignado : Activo
     {
-        public int CantidadAsignada { get; set; }
-        public Area Area { get; set; }
+        public virtual int CantidadAsignada { get; set; }
+        public virtual Area Area { get; set; }
     }
 }

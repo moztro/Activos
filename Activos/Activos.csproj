@@ -34,19 +34,20 @@
   <ItemGroup>
     <Reference Include="AjaxControlToolkit, Version=4.1.7.123, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\AjaxControlToolkit.Binary.NET4\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="Iesi.Collections">
-      <HintPath>..\..\..\..\..\..\..\Libraries\NHibernate\Required_Bins\Iesi.Collections.dll</HintPath>
+      <HintPath>NhibernateUtils\Iesi.Collections.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>..\..\..\..\..\..\..\Libraries\NHibernate\Tests\log4net.dll</HintPath>
+      <HintPath>NhibernateUtils\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="NHibernate">
-      <HintPath>..\..\..\..\..\..\..\Libraries\NHibernate\Required_Bins\NHibernate.dll</HintPath>
+      <HintPath>NhibernateUtils\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate.Mapping.Attributes">
-      <HintPath>..\..\..\..\..\..\..\Libraries\NHibernate.Mapping.Attributes.dll</HintPath>
+      <HintPath>NhibernateUtils\NHibernate.Mapping.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -73,6 +74,7 @@
     <EmbeddedResource Include="Mappings\Area.hbm.xml" />
     <EmbeddedResource Include="Mappings\Activo.hbm.xml" />
     <Content Include="Mappings\ActivoAsignado.hbm.xml" />
+    <Content Include="NhibernateUtils\NHibernate.cfg.xml" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -210,7 +212,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>35256</DevelopmentServerPort>
+          <DevelopmentServerPort>38047</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

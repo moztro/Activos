@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
-                   assembly="BaseBO"
-                   namespace="Activos.Modelo.BaseBO">
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
   
-  <class name="BaseBO" table="BaseBO">
+  <class name="Activos.Modelo.BaseBO,Activos" table="BaseBO">
     <id name="Id" column="Id" type="int" unsaved-value="0">
       <generator class="identity" />
     </id>
