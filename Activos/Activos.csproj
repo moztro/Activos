@@ -55,6 +55,13 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Mapeos\Almacen.hbm.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Mapeos\Area.hbm.xml" />
+    <Content Include="NHibernate\Iesi.Collections.dll" />
+    <Content Include="NHibernate\log4net.dll" />
+    <Content Include="NHibernate\NHibernate.dll" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -131,7 +138,9 @@
     <Content Include="sitersc\js\libs\toCheckList\jquery.toChecklist.js" />
     <Content Include="sitersc\js\menuAcciones.js" />
     <Content Include="sitersc\js\plantilla.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

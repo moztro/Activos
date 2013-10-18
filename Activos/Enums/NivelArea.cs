@@ -7,8 +7,8 @@ namespace Activos.Enums
 {
     public enum NivelArea
     {
-        DIRECCION,
-        DEPARTAMENTO,
-        AGENCIA
+        DIRECCION = 1,
+        DEPARTAMENTO = 2,
+        AGENCIA = 3
     }
 }
