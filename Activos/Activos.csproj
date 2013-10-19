@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Entradas.aspx" />
     <Content Include="Global.asax" />
     <EmbeddedResource Include="Mappings\Almacen.hbm.xml">
       <SubType>Designer</SubType>
@@ -162,12 +163,21 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ActivoDAO.cs" />
+    <Compile Include="DAO\AlmacenDAO.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entradas.aspx.cs">
+      <DependentUpon>Entradas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entradas.aspx.designer.cs">
+      <DependentUpon>Entradas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Enums\NivelArea.cs" />
     <Compile Include="Enums\Rubro.cs" />
@@ -180,6 +190,8 @@
     <Compile Include="Modelo\Area.cs" />
     <Compile Include="Modelo\BaseBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ActivoServices.cs" />
+    <Compile Include="Services\CatalogosServices.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -187,6 +199,7 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Utils\GenericDAO.cs" />
     <Compile Include="Utils\NHConnection.cs" />
   </ItemGroup>
   <ItemGroup>

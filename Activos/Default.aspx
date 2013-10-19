@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Página principal" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+﻿<%@ Page Title="Sistema de Activos" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
     CodeBehind="Default.aspx.cs" Inherits="Activos._Default" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="cphHead">

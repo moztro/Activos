@@ -11,6 +11,6 @@ namespace Activos.Enums
         FOTOGRAFIA,
         MEDICO,
         PAPELERIA,
-        LIMPIEZA
+        LIMPIEZA  
     }
 }

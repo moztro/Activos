@@ -9,6 +9,7 @@ namespace Activos.Enums
     {
         DIRECCION = 1,
         DEPARTAMENTO = 2,
-        AGENCIA = 3
+        SUBDEPARTAMENTO = 3,
+        AGENCIA = 4
     }
 }
