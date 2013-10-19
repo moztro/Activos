@@ -24,14 +24,23 @@ namespace Activos.Utils
             return Tlist;
         }
 
-        public void saveOrUpdate(T obj)
+        public bool saveOrUpdate(T obj)
         {
             using (NHibernate.ITransaction transaction = session.BeginTransaction())
             {
-                session.SaveOrUpdate(obj);
-                session.Flush();
-                transaction.Commit();
+                try
+                {
+                    session.SaveOrUpdate(obj);
+                    session.Flush();
+                    transaction.Commit();
+                    return true;
+                }
+                catch
+                {
+                    transaction.Rollback();
+                }
             }
+            return false;
         }
     }
 }
