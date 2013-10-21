@@ -28,7 +28,7 @@
     
 <div id="cabecera-titulo">
 	<div id="cabecera-titulo-content">
-    	<img src="sitersc/img/banner-fiscalia.jpg" alt="" />        
+    	<img src="sitersc/img/banner-fiscalia.jpg" alt="" width="100%" />        
         <div id="menu">
         	<asp:ContentPlaceHolder ID="cphMenu" runat="server">
             <!-- ACA VA EL MENU -->

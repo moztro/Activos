@@ -238,7 +238,8 @@ body
 #footer-deeper, 
 #menuSuperior
 {
-	width:960px;
+	/*width:960px;*/
+	width:85%;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -246,7 +247,8 @@ body
 #cabecera-superior{	border-bottom:2px #76b415 solid;}
 #cabecera-superior-content
 {	
-	height:24px;	
+	/*height:24px;	*/
+	height:auto;
 	color:#fff;
 	padding-top:2px;
 	padding-bottom:2px;		
@@ -256,7 +258,8 @@ body
 {
 	background-color:#eeeeee;
 	border-bottom:1px solid #c5c5c5;
-	height:144px;
+	/*height:144px;*/
+	height:auto;
 	padding-top:7px;	
 }
 

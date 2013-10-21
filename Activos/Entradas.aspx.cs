@@ -14,7 +14,6 @@ namespace Activos
 {
     public partial class Entradas : System.Web.UI.Page
     {
-        ISession session = NHConnection.Session;
         ActivoServices activoService = new ActivoServices();
         CatalogosServices catalogoService = new CatalogosServices();
         private Activo activo;
@@ -61,7 +60,7 @@ namespace Activos
             
             activo.Descripcion = txtConcepto.Text;
             activo.Precio = Convert.ToDouble(txtPrecio.Text);
-            activo.Existencia = Convert.ToInt32(txtCantidad.Text);
+            activo.Existencia += Convert.ToInt32(txtCantidad.Text);
             activo.Almacen = new Almacen();
             activo.Almacen.Id = Convert.ToInt32(ddlAlmacen.SelectedValue);
 

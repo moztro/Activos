@@ -5,6 +5,13 @@ CodeBehind="Entradas.aspx.cs" Inherits="Activos.Entradas" %>
     <title>Sistema de E/S de Activos</title>
 </asp:Content>
 <asp:Content ID="MenuContent" runat="server" ContentPlaceHolderID="cphMenu">
+    <asp:Menu ID="MenuActivos" runat="server" Orientation="Horizontal" CssClass="menuAll">
+    <StaticMenuItemStyle CssClass="menuAllItems" />  
+        <Items>
+            <asp:MenuItem Text="Entradas" Selected="true" />
+            <asp:MenuItem Text="Consultas" NavigateUrl="~/Consultas.aspx" />
+        </Items>
+    </asp:Menu>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <table>
@@ -19,7 +26,7 @@ CodeBehind="Entradas.aspx.cs" Inherits="Activos.Entradas" %>
                 </td>
             </tr>
             <tr>
-                <asp:Label ID="lblActivoId" runat="server" Visible="true" Text="0" />
+                <asp:Label ID="lblActivoId" runat="server" Visible="false" Text="0" />
             </tr>
             <tr>
                 <td>Concepto</td>
@@ -39,8 +46,8 @@ CodeBehind="Entradas.aspx.cs" Inherits="Activos.Entradas" %>
             </tr>
             <tr>
                 <td colspan="2" align="right">
-                    <asp:Button ID="btnGuardar" runat="server" Text="Guardar" 
-                        oncommand="btnGuardar_Command" />
+                    <asp:Button ID="btnGuardar" runat="server" Text="Guardar" CssClass=" btn_metro btn_metro_save" 
+                        oncommand="btnGuardar_Command" BackColor="#00CC00" />
                 </td>
             </tr>
             <tr>

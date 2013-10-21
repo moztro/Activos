@@ -10,7 +10,7 @@
 namespace Activos {
     
     
-    public partial class Entradas {
+    public partial class Consultas {
         
         /// <summary>
         /// Control MenuActivos.
@@ -22,84 +22,111 @@ namespace Activos {
         protected global::System.Web.UI.WebControls.Menu MenuActivos;
         
         /// <summary>
-        /// Control txtBuscar.
+        /// Control ddlAlmacenes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBuscar;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAlmacenes;
         
         /// <summary>
-        /// Control btnBuscar.
+        /// Control txtFechaInicio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnBuscar;
+        protected global::System.Web.UI.WebControls.TextBox txtFechaInicio;
         
         /// <summary>
-        /// Control lblActivoId.
+        /// Control ceFechaInicio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblActivoId;
+        protected global::AjaxControlToolkit.CalendarExtender ceFechaInicio;
         
         /// <summary>
-        /// Control txtConcepto.
+        /// Control meeFechaInicio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtConcepto;
+        protected global::AjaxControlToolkit.MaskedEditExtender meeFechaInicio;
         
         /// <summary>
-        /// Control txtPrecio.
+        /// Control txtFechaFin.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrecio;
+        protected global::System.Web.UI.WebControls.TextBox txtFechaFin;
         
         /// <summary>
-        /// Control txtCantidad.
+        /// Control ceFechaFin.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCantidad;
+        protected global::AjaxControlToolkit.CalendarExtender ceFechaFin;
         
         /// <summary>
-        /// Control ddlAlmacen.
+        /// Control meeFechaFin.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAlmacen;
+        protected global::AjaxControlToolkit.MaskedEditExtender meeFechaFin;
         
         /// <summary>
-        /// Control btnGuardar.
+        /// Control btnConsultar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGuardar;
+        protected global::System.Web.UI.WebControls.Button btnConsultar;
         
         /// <summary>
-        /// Control lblError.
+        /// Control gvActivos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblError;
+        protected global::System.Web.UI.WebControls.GridView gvActivos;
+        
+        /// <summary>
+        /// Control DataSourceTest.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource DataSourceTest;
+        
+        /// <summary>
+        /// Control btnReporteExistencias.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton btnReporteExistencias;
+        
+        /// <summary>
+        /// Control btnReporteESCosteado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton btnReporteESCosteado;
     }
 }
