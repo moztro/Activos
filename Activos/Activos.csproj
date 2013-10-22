@@ -82,8 +82,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mappings\Area.hbm.xml" />
     <EmbeddedResource Include="Mappings\Activo.hbm.xml" />
+    <Content Include="Kardex.aspx" />
     <Content Include="Mappings\ActivoAsignado.hbm.xml" />
     <Content Include="NhibernateUtils\NHibernate.cfg.xml" />
+    <Content Include="Salidas.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -203,12 +205,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Kardex.aspx.cs">
+      <DependentUpon>Kardex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kardex.aspx.designer.cs">
+      <DependentUpon>Kardex.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modelo\Activo.cs" />
     <Compile Include="Modelo\ActivoAsignado.cs" />
     <Compile Include="Modelo\Almacen.cs" />
     <Compile Include="Modelo\Area.cs" />
     <Compile Include="Modelo\BaseBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salidas.aspx.cs">
+      <DependentUpon>Salidas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salidas.aspx.designer.cs">
+      <DependentUpon>Salidas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Services\ActivoServices.cs" />
     <Compile Include="Services\CatalogosServices.cs" />
     <Compile Include="Site.Master.cs">
