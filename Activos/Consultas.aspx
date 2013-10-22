@@ -10,19 +10,21 @@ CodeBehind="Consultas.aspx.cs" Inherits="Activos.Consultas" %>
     <asp:Menu ID="MenuActivos" runat="server" Orientation="Horizontal" CssClass="menuAll">
         <StaticMenuItemStyle CssClass="menuAllItems" />  
         <Items>
-            <asp:MenuItem Text="Entradas" NavigateUrl="~/Entradas.aspx" />
+            <asp:MenuItem Text="Entradas" NavigateUrl="~/Entradas.aspx" />            
+            <asp:MenuItem Text="Salidas" NavigateUrl="~/Salidas.aspx" />
             <asp:MenuItem Text="Consultas" Selected="true" />
+            <asp:MenuItem Text="Kardex" NavigateUrl="~/Kardex.aspx" />
             <asp:MenuItem Text="Configuración" NavigateUrl="~/Configuracion.aspx" />
         </Items>
     </asp:Menu>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>Consultas</h2>
+    <div class="titulos">Consultas</div>
 
    <table>
        <tr>
         <td>Elegir Almacén</td>
-        <td><asp:DropDownList ID="ddlAlmacenes" runat="server" style="width:auto;">
+        <td><asp:DropDownList ID="ddlAlmacenes" runat="server" style="width:auto;"  CssClass="input_select" >
             <asp:ListItem Text="MÉDICO" Value="3" />
             <asp:ListItem Text="CÓMPUTO" Value="4" />
             <asp:ListItem Text="LIMPIEZA" Value="5" />
@@ -35,7 +37,7 @@ CodeBehind="Consultas.aspx.cs" Inherits="Activos.Consultas" %>
             Fecha Inicio
         </td>
         <td>
-            <asp:TextBox ID="txtFechaInicio" runat="server" />
+            <asp:TextBox ID="txtFechaInicio" runat="server" CssClass="input_text" />
             <asp:CalendarExtender ID="ceFechaInicio" runat="server" TargetControlID="txtFechaInicio" />
             <asp:MaskedEditExtender ID="meeFechaInicio" runat="server" MaskType="Date" TargetControlID="txtFechaInicio" Mask="99/99/9999" />
         </td>
@@ -43,7 +45,7 @@ CodeBehind="Consultas.aspx.cs" Inherits="Activos.Consultas" %>
             Fecha Fin
         </td>
         <td>
-            <asp:TextBox ID="txtFechaFin" runat="server" />
+            <asp:TextBox ID="txtFechaFin" runat="server" CssClass="input_text" />
             <asp:CalendarExtender ID="ceFechaFin" runat="server" TargetControlID="txtFechaFin" />
             <asp:MaskedEditExtender ID="meeFechaFin" runat="server" MaskType="Date" TargetControlID="txtFechaFin" Mask="99/99/9999" />
         </td>
