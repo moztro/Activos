@@ -12,6 +12,7 @@ CodeBehind="Consultas.aspx.cs" Inherits="Activos.Consultas" %>
         <Items>
             <asp:MenuItem Text="Entradas" NavigateUrl="~/Entradas.aspx" />
             <asp:MenuItem Text="Consultas" Selected="true" />
+            <asp:MenuItem Text="Configuración" NavigateUrl="~/Configuracion.aspx" />
         </Items>
     </asp:Menu>
 </asp:Content>

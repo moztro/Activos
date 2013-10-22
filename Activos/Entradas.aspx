@@ -10,13 +10,15 @@ CodeBehind="Entradas.aspx.cs" Inherits="Activos.Entradas" %>
         <Items>
             <asp:MenuItem Text="Entradas" Selected="true" />
             <asp:MenuItem Text="Consultas" NavigateUrl="~/Consultas.aspx" />
+            <asp:MenuItem Text="Configuración" NavigateUrl="~/Configuracion.aspx" />
         </Items>
     </asp:Menu>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <table>
+    <h2>Entrada de Activos</h2>
+    <table align="center">
             <tr>
-                <td colspan="2"><b>Formulario de activos</b></td>
+                <td colspan="2"></td>
             </tr>
             <tr>
                 <td colspan="2" align="right">
@@ -50,10 +52,6 @@ CodeBehind="Entradas.aspx.cs" Inherits="Activos.Entradas" %>
                         oncommand="btnGuardar_Command" BackColor="#00CC00" />
                 </td>
             </tr>
-            <tr>
-                <td colspan="2">
-                    <asp:Label ID="lblError" runat="server" ForeColor="Red" />
-                </td>
-            </tr>
         </table>
+        <asp:Label ID="lblError" runat="server" ForeColor="Red" />
 </asp:Content>
