@@ -13,6 +13,15 @@ namespace Activos {
     public partial class Salidas {
         
         /// <summary>
+        /// Control MenuActivos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Menu MenuActivos;
+        
+        /// <summary>
         /// Control ddlRubro.
         /// </summary>
         /// <remarks>

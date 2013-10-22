@@ -2,6 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMenu" runat="server">
+    <asp:Menu ID="MenuActivos" runat="server" Orientation="Horizontal" CssClass="menuAll">
+    <StaticMenuItemStyle CssClass="menuAllItems" />  
+        <Items>
+            <asp:MenuItem Text="Entradas" NavigateUrl="~/Entradas.aspx" />            
+            <asp:MenuItem Text="Salidas" Selected="true" />
+            <asp:MenuItem Text="Consultas" NavigateUrl="~/Consultas.aspx" />
+            <asp:MenuItem Text="Kardex" NavigateUrl="~/Kardex.aspx" />
+            <asp:MenuItem Text="Configuración" NavigateUrl="~/Configuracion.aspx" />
+        </Items>
+    </asp:Menu>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
 

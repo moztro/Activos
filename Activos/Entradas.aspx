@@ -8,21 +8,23 @@ CodeBehind="Entradas.aspx.cs" Inherits="Activos.Entradas" %>
     <asp:Menu ID="MenuActivos" runat="server" Orientation="Horizontal" CssClass="menuAll">
     <StaticMenuItemStyle CssClass="menuAllItems" />  
         <Items>
-            <asp:MenuItem Text="Entradas" Selected="true" />
+            <asp:MenuItem Text="Entradas" Selected="true" />            
+            <asp:MenuItem Text="Salidas" NavigateUrl="~/Salidas.aspx" />
             <asp:MenuItem Text="Consultas" NavigateUrl="~/Consultas.aspx" />
+            <asp:MenuItem Text="Kardex" NavigateUrl="~/Kardex.aspx" />
             <asp:MenuItem Text="Configuración" NavigateUrl="~/Configuracion.aspx" />
         </Items>
     </asp:Menu>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>Entrada de Activos</h2>
+    <div class="titulos">Entrada de Activos</div>
     <table align="center">
             <tr>
                 <td colspan="2"></td>
             </tr>
             <tr>
                 <td colspan="2" align="right">
-                    <asp:TextBox ID="txtBuscar" runat="server" Width="80px" />
+                    <asp:TextBox ID="txtBuscar" runat="server" Width="80px" CssClass="input_text" />
                     <asp:ImageButton ID="btnBuscar" runat="server" 
                         ImageUrl="~/sitersc/img/btnSearch.png" oncommand="btnBuscar_Command" />
                 </td>
@@ -32,19 +34,19 @@ CodeBehind="Entradas.aspx.cs" Inherits="Activos.Entradas" %>
             </tr>
             <tr>
                 <td>Concepto</td>
-                <td><asp:TextBox ID="txtConcepto" runat="server" /></td>
+                <td><asp:TextBox ID="txtConcepto" runat="server" CssClass="input_text" /></td>
             </tr>
             <tr>
                 <td>Precio</td>
-                <td><asp:TextBox ID="txtPrecio" runat="server" /></td>
+                <td><asp:TextBox ID="txtPrecio" runat="server" CssClass="input_text" /></td>
             </tr>
             <tr>
                 <td>Cantidad</td>
-                <td><asp:TextBox ID="txtCantidad" runat="server" /></td>
+                <td><asp:TextBox ID="txtCantidad" runat="server" CssClass="input_text" /></td>
             </tr>
             <tr>
                 <td>Almacén</td>
-                <td><asp:DropDownList ID="ddlAlmacen" runat="server" /></td>
+                <td><asp:DropDownList ID="ddlAlmacen" runat="server" CssClass="input_select" /></td>
             </tr>
             <tr>
                 <td colspan="2" align="right">
