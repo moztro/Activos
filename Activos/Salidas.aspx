@@ -1,5 +1,31 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Salidas.aspx.cs" Inherits="Activos.Salidas" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
+
+<script type="text/javascript" src="sitersc/js/metodosAction.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        onLoadAlmacenes();
+    });
+
+    var pageUrl = '<%=ResolveUrl("~/Salidas.aspx")%>'
+    function onLoadAlmacenes() {
+        var control = $('#ddlAlmacen');
+        var url = pageUrl + '/llenarAlmacenes';
+        llenar(control, url);
+    }
+
+    function llenarActivos() {
+        var id = $('#Almacen').val();
+        var control = $('#Activos');
+        var controlPadre = $('#Almacen');
+        var url = '/Salidas/CargarActivos/' + parseInt(id);
+        llenarEnCascada(control, controlPadre, url);
+    }
+
+</script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMenu" runat="server">
     <asp:Menu ID="MenuActivos" runat="server" Orientation="Horizontal" CssClass="menuAll">
@@ -21,11 +47,7 @@
     <tr>
         <td>Rubro</td>
         <td>
-            <asp:DropDownList ID="ddlRubro" runat="server" CssClass="input_select">
-                <asp:ListItem Value="1">Computo</asp:ListItem>
-                <asp:ListItem Value="2">Limpieza</asp:ListItem>
-                <asp:ListItem Value="3">Fotografia</asp:ListItem>
-                <asp:ListItem Value="1">Medico</asp:ListItem>
+            <asp:DropDownList ID="ddlAlmacen" runat="server" CssClass="input_select" onchange="llenarActivos();">
             </asp:DropDownList>
         </td>
         <td>Concepto</td>

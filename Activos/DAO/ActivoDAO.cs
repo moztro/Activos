@@ -39,5 +39,13 @@ namespace Activos.DAO
         {
             return base.get(id);
         }
+         
+        public List<Activo> getActivosXAlmacen(int almacenId) {
+            List<Activo> Tlist = new List<Activo>();
+            var list = base.getSession().CreateQuery("FROM Activo a WHERE a.Almacen.Id=" + almacenId).List<Activo>();
+            foreach (Activo a in list)
+                Tlist.Add(a);
+            return Tlist;       
+        }
     }
 }

@@ -20,6 +20,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -161,6 +165,7 @@
     <Content Include="sitersc\js\libs\jquery.multiselect\jquery.multiselect.css" />
     <Content Include="sitersc\js\libs\jquery.multiselect\jquery.multiselect.min.js" />
     <Content Include="sitersc\js\libs\jQuery1.8.2\jQuery1.8.2-min.js" />
+    <Content Include="sitersc\js\metodosAction.js" />
     <Content Include="sitersc\js\libs\toCheckList\jquery.toChecklist.css" />
     <Content Include="sitersc\js\libs\toCheckList\jquery.toChecklist.js" />
     <Content Include="sitersc\js\menuAcciones.js" />
@@ -255,6 +260,7 @@
     <None Include="NhibernateUtils\nhibernate-mapping.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\PublishProfiles\WebSite.pubxml" />
     <None Include="sitersc\fonts\SEGOEUI.eot" />
     <None Include="sitersc\fonts\SEGOEUI.TTF" />
   </ItemGroup>
